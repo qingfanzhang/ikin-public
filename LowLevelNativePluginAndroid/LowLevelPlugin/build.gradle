@@ -1,0 +1,245 @@
+import org.apache.tools.ant.taskdefs.condition.Os
+
+apply plugin: 'com.android.library'
+
+def unityJar
+def platformRoot
+def unityVersionSubdirectory = 'PlaybackEngines/AndroidPlayer/Variations/il2cpp/Development/Classes/classes.jar'
+def unityVersion = '2020.3.4f1'
+
+// If running on Windows, then:
+if (Os.isFamily(Os.FAMILY_WINDOWS))
+{
+    // Use Unity Windows platform root.
+    platformRoot = 'C:/Program Files/Unity'
+	
+	unityVersionSubdirectory = '/Editor/Data/' + unityVersionSubdirectory
+	
+	// Generate a specific location for the version.
+	def filename = platformRoot + unityVersion + unityVersionSubdirectory
+
+	// Get the file at the specific version path.
+	unityJar = file(filename)
+
+    // If the file does not exist, then:
+    if (!unityJar.exists())
+    {
+        // Get the file at the generic version path.
+        unityJar = file(platformRoot + unityVersionSubdirectory)
+
+        if (!unityJar.exists())
+        {
+            filename = platformRoot + '/Hub/Editor/' + unityVersion + unityVersionSubdirectory
+
+            unityJar = file(filename)
+
+            // If the file does not exist, then:
+            if (!unityJar.exists())
+            {
+                // Get the file at the generic version path.
+                unityJar = file(platformRoot + '/Hub' + unityVersionSubdirectory)
+            }
+        }
+    }
+}
+else if (Os.isFamily(Os.FAMILY_MAC))
+{
+    // Use the Unity Mac platform root.
+    platformRoot = 'file://Applications/Unity/'
+	
+	// Generate a specific location for the version.
+	def filename = platformRoot + 'Hub/Editor/' + unityVersion + '/' + unityVersionSubdirectory
+
+	// Get the file at the specific version path.
+	unityJar = file(filename)
+
+    // If the file does not exist, then:
+    if (!unityJar.exists())
+    {
+        // Get the file at the generic version path.
+        unityJar = file(platformRoot + unityVersionSubdirectory)
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    
+    // Pulls in the classes that Unity provides for Android development such as UnityPlayer, which we use to get the application context.
+    compileOnly files(unityJar)
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'consumer-rules.pro'
+    }
+
+    buildTypes {
+        debug {
+            // Generates the debug symbol dictionary
+            debuggable true
+
+            minifyEnabled false
+            multiDexEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            // Generates the debug symbol dictionary
+            debuggable true
+
+            minifyEnabled false
+            multiDexEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // Android Studio does not build native plugins on it's own.
+    // Instead it makes use of command line compilers like NDK Build or CMake
+    // We are using NDK Build, and so we need to point it to the 'makefile'
+    // that is used by NDK Build to determine what source files to include in the native ploject,
+    // what native libraries to link with, what the target output is, etc.
+    externalNativeBuild {
+        ndkBuild {
+            path file('src/main/jni/Android.mk')
+        }
+    }
+    ndkVersion '20.0.5594570'
+}
+
+// This is where custom variables and methods are declared.
+// Change these to change the location and names of the files as they are exported
+// from the Android Studio project and into the Unity project.
+ext {
+    // The name of the Android SDK plugin
+    javaLib = "LowLevelPlugin"
+    nativePresentationJavaLib = "native_presentation"
+
+    // The new name of the Android SDK plugin as it will appear in the Unity directory.
+    javaNewLib = "iKinRyz"
+
+    // The name of the Android NDK plugins
+    unityXrPluginLib = "UnityXrPlugin"
+    companionActivityLib = "CompanionActivity"
+    nativePresentationLib = "android_native_presentation"
+
+    // The directory for the Android plugins in the Unity project.
+    unityDir = "../../UnityPackage/com.ikin.ryz/Runtime/Android/"
+
+    libPrefix = "lib"
+    soExt = ".so"
+    aarExt = ".aar"
+    wildcardLib = "*" + soExt
+}
+
+// Handles which operations occur after compiling
+afterEvaluate {
+    assembleDebug.finalizedBy(create_export_tasks("debug"))
+    assembleRelease.finalizedBy(create_export_tasks("release"))
+}
+
+// Create export tasks for the native NDK libraries
+def create_native_export_tasks(architecture, target) {
+
+    def fileExt = "-" + target + soExt
+
+    // Creates a task that deletes the old library file from the Unity directory.
+    def deleteTask = tasks.create("delete_${architecture}_${target}", Delete) {
+        delete unityDir + architecture + "/" + libPrefix + unityXrPluginLib + fileExt
+        delete unityDir + architecture + "/" + libPrefix + companionActivityLib + fileExt
+        delete unityDir + architecture + "/" + libPrefix + nativePresentationLib + fileExt
+    }
+
+    // Creates a task that copies the newly built library file to the Unity directory.
+    return tasks.create("copy_${architecture}_${target}", Copy) {
+
+        // Describe the location to take the built library from.
+        from "$buildDir/../../native_presentation/build/intermediates/ndkBuild/" + target + "/obj/local/" + architecture
+
+        // Describe which files are being taken
+        include wildcardLib
+
+        // Describe which location the files are being moved to.
+        into unityDir + architecture
+
+        rename libPrefix + nativePresentationLib + soExt, libPrefix + nativePresentationLib + fileExt
+
+
+        // Describe the location to take the built library from.
+        from "$buildDir/intermediates/ndkBuild/" + target + "/obj/local/" + architecture
+
+        // Describe which files are being taken
+        include wildcardLib
+
+        // Describe which location the files are being moved to.
+        into unityDir + architecture
+
+        // Rename the files.
+        rename libPrefix + unityXrPluginLib + soExt, libPrefix + unityXrPluginLib + fileExt
+        rename libPrefix + companionActivityLib + soExt, libPrefix + companionActivityLib + fileExt
+
+        // This task depends on the delete task to complete first.
+        dependsOn deleteTask
+    }
+}
+
+// Create export tasks for the managed SDK libraries
+def create_export_tasks(target) {
+
+    def fileExt = "-" + target + aarExt
+
+    // Creates a task that deletes the old library file from the Unity directory.
+    def deleteTask = tasks.create("delete_managed_${target}", Delete) {
+        delete unityDir + libPrefix + javaNewLib + fileExt
+        delete unityDir + libPrefix + nativePresentationJavaLib + fileExt
+    }
+
+    // Creates a task that copies the newly built library file to the Unity directory.
+    return tasks.create("copy_managed_${target}", Copy) {
+
+        // Describe the location to take the built library from.
+        from "$buildDir/../../native_presentation/build/outputs/aar"
+
+        // Describe which files are being taken
+        include nativePresentationJavaLib + fileExt
+
+        // Describe which location the files are being moved to.
+        into unityDir
+
+        // Rename the files.
+        rename nativePresentationJavaLib + fileExt, libPrefix + nativePresentationJavaLib + fileExt
+
+        // Describe the location to take the built library from.
+        from "$buildDir/outputs/aar"
+
+        // Describe which files are being taken
+        include javaLib + fileExt
+
+        // Describe which location the files are being moved to.
+        into unityDir
+
+        // Rename the files.
+        rename javaLib + fileExt, libPrefix + javaNewLib + fileExt
+
+        // This task depends on the delete task to complete first.
+        dependsOn deleteTask
+
+        // This task depends on the export native tasks to complete first.
+        dependsOn create_native_export_tasks("arm64-v8a", target)
+        dependsOn create_native_export_tasks("armeabi-v7a", target)
+        dependsOn create_native_export_tasks("x86", target)
+        //dependsOn create_native_export_tasks("x86_64", target)
+    }
+}

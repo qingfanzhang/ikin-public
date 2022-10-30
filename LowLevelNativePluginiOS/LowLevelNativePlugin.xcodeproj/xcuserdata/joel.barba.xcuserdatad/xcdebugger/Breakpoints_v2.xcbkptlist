@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D3F6CF1E-5F36-4975-B2AB-E1DD23CFB041"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "65755196-4E67-4D97-8B8E-BA9FD7CD6A50"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LowLevelNativePlugin/MainEntryPoint.mm"
+            timestampString = "592114767.802263"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "25BD87CE-A715-4262-8994-8746B2B81947"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../unity/Modules/XR/Subsystems/Display/XRDisplaySubsystem.cpp"
+            timestampString = "593911360.316927"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "485"
+            endingLineNumber = "485"
+            landmarkName = "XRDisplaySubsystem::GfxThread::Start()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5E5E8E1C-5CC3-4DE7-AF66-94E10D86AB38"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../unity/Runtime/Utilities/RuntimeStatic.h"
+            timestampString = "593923742.801621"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "EnsureInitialized()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5E5E8E1C-5CC3-4DE7-AF66-94E10D86AB38 - dd96041b243e60f3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RuntimeStatic&lt;DSPGraphFactory, false&gt;::EnsureInitialized()"
+                  moduleName = "UnityFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joel.barba/Documents/GitHub/unity/Runtime/Utilities/RuntimeStatic.h"
+                  timestampString = "593911610.7466559"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "5E5E8E1C-5CC3-4DE7-AF66-94E10D86AB38 - ed02d64b41d2b0dd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RuntimeStatic&lt;InputSystemState, false&gt;::EnsureInitialized()"
+                  moduleName = "UnityFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joel.barba/Documents/GitHub/unity/Runtime/Utilities/RuntimeStatic.h"
+                  timestampString = "593911610.748525"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "5E5E8E1C-5CC3-4DE7-AF66-94E10D86AB38 - daf5fad847398b74"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RuntimeStatic&lt;std::__1::map&lt;unsigned int, AudioSampleProvider*, std::__1::less&lt;unsigned int&gt;, stl_allocator&lt;std::__1::pair&lt;unsigned int const, AudioSampleProvider*&gt;, (MemLabelIdentifier)31, 16&gt; &gt;, false&gt;::EnsureInitialized()"
+                  moduleName = "UnityFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joel.barba/Documents/GitHub/unity/Runtime/Utilities/RuntimeStatic.h"
+                  timestampString = "593911610.7501889"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "5E5E8E1C-5CC3-4DE7-AF66-94E10D86AB38 - 75c851420c1fa9e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RuntimeStatic&lt;DeprecatedFrameStatsRecorders, false&gt;::EnsureInitialized()"
+                  moduleName = "UnityFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joel.barba/Documents/GitHub/unity/Runtime/Utilities/RuntimeStatic.h"
+                  timestampString = "593911610.751961"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "5E5E8E1C-5CC3-4DE7-AF66-94E10D86AB38 - bfd3552a2cea4a64"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RuntimeStatic&lt;GetTimeSinceStartupHelper, false&gt;::EnsureInitialized()"
+                  moduleName = "UnityFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joel.barba/Documents/GitHub/unity/Runtime/Utilities/RuntimeStatic.h"
+                  timestampString = "593911610.753772"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "5E5E8E1C-5CC3-4DE7-AF66-94E10D86AB38 - 163c4296b77db465"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RuntimeStatic&lt;ModuleManager, false&gt;::EnsureInitialized()"
+                  moduleName = "UnityFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joel.barba/Documents/GitHub/unity/Runtime/Utilities/RuntimeStatic.h"
+                  timestampString = "593911610.7554491"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "5E5E8E1C-5CC3-4DE7-AF66-94E10D86AB38 - 2b73da0bcfcdba2a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RuntimeStatic&lt;ScalableBufferManager, false&gt;::EnsureInitialized()"
+                  moduleName = "UnityFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joel.barba/Documents/GitHub/unity/Runtime/Utilities/RuntimeStatic.h"
+                  timestampString = "593911610.757035"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "5E5E8E1C-5CC3-4DE7-AF66-94E10D86AB38 - 299f01df17dd9597"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RuntimeStatic&lt;std::__1::set&lt;void (*)(ScriptingClassPtr, SerializationCache::Data&amp;, bool&amp;), std::__1::less&lt;void (*)(ScriptingClassPtr, SerializationCache::Data&amp;, bool&amp;)&gt;, std::__1::allocator&lt;void (*)(ScriptingClassPtr, SerializationCache::Data&amp;, bool&amp;)&gt; &gt;, false&gt;::EnsureInitialized()"
+                  moduleName = "UnityFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joel.barba/Documents/GitHub/unity/Runtime/Utilities/RuntimeStatic.h"
+                  timestampString = "593911610.758647"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "5E5E8E1C-5CC3-4DE7-AF66-94E10D86AB38 - dd013f4245cfca2a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RuntimeStatic&lt;CallbackArray1&lt;bool&gt;, false&gt;::EnsureInitialized()"
+                  moduleName = "UnityFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joel.barba/Documents/GitHub/unity/Runtime/Utilities/RuntimeStatic.h"
+                  timestampString = "593911610.760716"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "5E5E8E1C-5CC3-4DE7-AF66-94E10D86AB38 - 8d698eabbed9c992"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RuntimeStatic&lt;IVRDeviceShim, false&gt;::EnsureInitialized()"
+                  moduleName = "UnityFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joel.barba/Documents/GitHub/unity/Runtime/Utilities/RuntimeStatic.h"
+                  timestampString = "593911610.762467"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "5E5E8E1C-5CC3-4DE7-AF66-94E10D86AB38 - 1ff92a074963da7d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RuntimeStatic&lt;XRSubsystemManager, false&gt;::EnsureInitialized()"
+                  moduleName = "UnityFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joel.barba/Documents/GitHub/unity/Runtime/Utilities/RuntimeStatic.h"
+                  timestampString = "593911610.764094"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "5E5E8E1C-5CC3-4DE7-AF66-94E10D86AB38 - 8c867d079e152825"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RuntimeStatic&lt;XRPreInit, false&gt;::EnsureInitialized()"
+                  moduleName = "UnityFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joel.barba/Documents/GitHub/unity/Runtime/Utilities/RuntimeStatic.h"
+                  timestampString = "593911610.765674"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "5E5E8E1C-5CC3-4DE7-AF66-94E10D86AB38 - c6259c4a6f6d4bc0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RuntimeStatic&lt;XREngineCallbacks, false&gt;::EnsureInitialized()"
+                  moduleName = "UnityFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joel.barba/Documents/GitHub/unity/Runtime/Utilities/RuntimeStatic.h"
+                  timestampString = "593911610.767269"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "5E5E8E1C-5CC3-4DE7-AF66-94E10D86AB38 - ae723114eafb8ff3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RuntimeStatic&lt;XRStats, false&gt;::EnsureInitialized()"
+                  moduleName = "UnityFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joel.barba/Documents/GitHub/unity/Runtime/Utilities/RuntimeStatic.h"
+                  timestampString = "593911610.769281"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "5E5E8E1C-5CC3-4DE7-AF66-94E10D86AB38 - e6b3fcdc53a649d6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RuntimeStatic&lt;XRInputSubsystemManager, false&gt;::EnsureInitialized()"
+                  moduleName = "UnityFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joel.barba/Documents/GitHub/unity/Runtime/Utilities/RuntimeStatic.h"
+                  timestampString = "593911610.77095"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "5E5E8E1C-5CC3-4DE7-AF66-94E10D86AB38 - 63eba1e0f1a0a1b7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RuntimeStatic&lt;XRInputTracking, false&gt;::EnsureInitialized()"
+                  moduleName = "UnityFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joel.barba/Documents/GitHub/unity/Runtime/Utilities/RuntimeStatic.h"
+                  timestampString = "593911610.772579"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "5E5E8E1C-5CC3-4DE7-AF66-94E10D86AB38 - 5343dff2641d3010"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RuntimeStatic&lt;XRInputTrackingFacade, false&gt;::EnsureInitialized()"
+                  moduleName = "UnityFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joel.barba/Documents/GitHub/unity/Runtime/Utilities/RuntimeStatic.h"
+                  timestampString = "593911610.774202"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "5E5E8E1C-5CC3-4DE7-AF66-94E10D86AB38 - c8cdd7ddbdd6a590"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RuntimeStatic&lt;xr::MeshJobDataPool, true&gt;::EnsureInitialized()"
+                  moduleName = "UnityFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joel.barba/Documents/GitHub/unity/Runtime/Utilities/RuntimeStatic.h"
+                  timestampString = "593911610.7759711"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "5E5E8E1C-5CC3-4DE7-AF66-94E10D86AB38 - ad2860ba0d90d8d3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RuntimeStatic&lt;XRTrace, false&gt;::EnsureInitialized()"
+                  moduleName = "UnityFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joel.barba/Documents/GitHub/unity/Runtime/Utilities/RuntimeStatic.h"
+                  timestampString = "593911610.777625"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "5E5E8E1C-5CC3-4DE7-AF66-94E10D86AB38 - 2f39a4d6b9558b34"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RuntimeStatic&lt;mbedtls::MbedtlsGlobalContext, false&gt;::EnsureInitialized()"
+                  moduleName = "UnityFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joel.barba/Documents/GitHub/unity/Runtime/Utilities/RuntimeStatic.h"
+                  timestampString = "593911610.779247"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "5E5E8E1C-5CC3-4DE7-AF66-94E10D86AB38 - 473ecf35150fb04c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RuntimeStatic&lt;MbedtlsGlobalContext, false&gt;::EnsureInitialized()"
+                  moduleName = "UnityFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joel.barba/Documents/GitHub/unity/Runtime/Utilities/RuntimeStatic.h"
+                  timestampString = "593911610.780854"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "5E5E8E1C-5CC3-4DE7-AF66-94E10D86AB38 - 4aab2d7d0c6da7ca"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "RuntimeStatic&lt;VRInputSubsystem, false&gt;::EnsureInitialized()"
+                  moduleName = "UnityFramework"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/joel.barba/Documents/GitHub/unity/Runtime/Utilities/RuntimeStatic.h"
+                  timestampString = "593911610.782859"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "141"
+                  endingLineNumber = "141"
+                  offsetFromSymbolStart = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "313E10B5-E15A-4828-AD37-360CB69AB025"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../unity/Modules/XR/Subsystems/Display/XRTextureManager.cpp"
+            timestampString = "593911625.252617"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "XRTextureManager::RequestCreateTexture(const UnityXRRenderTextureDesc&amp; textureDesc)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "140260A6-EA09-4E2B-B9F5-1F8F46B755F5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../unity/Modules/XR/Subsystems/Display/XRTextureManager.cpp"
+            timestampString = "593911709.852706"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "XRTextureManager::RequestCreateTexture(const UnityXRRenderTextureDesc&amp; textureDesc)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "428763E0-6C6A-443C-B29B-058F704E63F5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../unity/Modules/XR/Subsystems/Display/XRDisplaySubsystem.cpp"
+            timestampString = "593924778.2782"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "453"
+            endingLineNumber = "453"
+            landmarkName = "XRDisplaySubsystem::BeforeRendering()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "76AE1663-9F7E-4B2F-8F78-CB3766D24DB7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../unity/Modules/XR/Subsystems/Display/XRDisplaySubsystem.cpp"
+            timestampString = "593924784.337829"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "470"
+            endingLineNumber = "470"
+            landmarkName = "XRDisplaySubsystem::AfterRendering()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7E8FE059-E41D-48EB-B22D-EBF5161942B2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../unity/Modules/XR/Subsystems/Display/XRDisplaySubsystem.cpp"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "484"
+            endingLineNumber = "484"
+            landmarkName = "XRDisplaySubsystem::GfxThread::Start()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3123A6A6-7109-42EA-AC4E-EDD99B1E5E15"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LowLevelNativePlugin/DisplayConnectionNotifier.mm"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "67"
+            endingLineNumber = "67">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0FFFA035-EEA9-467A-8901-9DF885B11099"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LowLevelNativePlugin/DisplayConnectionNotifier.mm"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

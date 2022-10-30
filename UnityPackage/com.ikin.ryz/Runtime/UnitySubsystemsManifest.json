@@ -1,0 +1,10 @@
+{
+    "name": "iKinRyz",
+    "version": "1.0.0",
+    "libraryName": "UnityXrPlugin",
+    "displays": [
+    {
+        "id": "libiKinRyz-Display",
+        "supportedMirrorBlitReservedModes": [ "leftEye", "rightEye", "sideBySide" ]
+    }]
+}
