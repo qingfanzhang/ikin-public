@@ -1,6 +1,6 @@
 # Developer Notes
 
-## High-level Overview :
+## High-level Overview        :
 This package creates a texture that is twice as wide as a regular phone screen.
 It is twice as wide so that it can draw both the phone screen and the iKin display.
 All cameras that are designated for left eye will end up on the phone screen, but before it is drawn to the screen it is drawn on the leftmost side of this texture.
